@@ -1,0 +1,15 @@
+.big-button {
+    background-color: $black;
+}
+
+.video-thumb {
+   max-width: 100%;
+   height: auto;
+}
+
+.top-hr {
+  max-width: 97% !important;
+  @media screen and (min-width: 1200px) {
+     max-width: 75rem;
+  }
+}

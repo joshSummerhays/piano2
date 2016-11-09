@@ -1,0 +1,19 @@
+.middle-container {
+    display: flex;
+    justify-content: center;
+    .middle-wait {
+        align-self: center;
+        .middle-button {
+            background-color: $black;
+        }
+    }
+    .middle-seperator {
+        width: 100px;
+    }
+    .middle-pay {
+        align-self: center;
+       .middle-button {
+            background-color: $black;
+        }
+    }
+}
