@@ -8,7 +8,6 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "assets",
         "favicon.ico"
       ],
       "index": "index.html",
@@ -18,7 +17,7 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "./assets/main.scss"
+        "styles.scss"
       ],
       "scripts": [],
       "environments": {
