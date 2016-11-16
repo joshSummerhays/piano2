@@ -10,6 +10,7 @@ import { TopContentComponent } from './top-content/top-content.component';
 import { BottomContentComponent } from './bottom-content/bottom-content.component';
 import { FooterComponent } from './footer/footer.component';
 import { MiddleContentComponent } from './middle-content/middle-content.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MiddleContentComponent } from './middle-content/middle-content.componen
     TopContentComponent,
     BottomContentComponent,
     FooterComponent,
-    MiddleContentComponent
+    MiddleContentComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
