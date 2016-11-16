@@ -7,3 +7,23 @@
 @import 'component-styles/middle-content';
 @import 'component-styles/bottom-content';
 @import 'component-styles/footer';
+
+.app-wrap {
+    display: none;
+}
+
+#preloader {
+    position: absolute;
+    top: 50%;
+    @media screen and (max-width: 640px) {
+        left: 5%;
+    }
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    .loader-note {
+        height: 100px;
+        content: url(./assets/images/one-note.svg);
+
+    }
+}

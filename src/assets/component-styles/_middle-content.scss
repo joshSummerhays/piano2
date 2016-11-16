@@ -1,17 +1,27 @@
 .middle-container {
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 620px) {
+        flex-direction: column;
+    }
     .middle-wait {
         align-self: center;
+        display: flex;
+        flex-direction: column;
         .middle-button {
             background-color: $black;
         }
     }
     .middle-seperator {
         width: 100px;
+        @media screen and (max-width: 620px) {
+            width: 0px;
+        }
     }
     .middle-pay {
         align-self: center;
+        display: flex;
+        flex-direction: column;
        .middle-button {
             background-color: $black;
         }
