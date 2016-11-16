@@ -11,6 +11,11 @@ import { BottomContentComponent } from './bottom-content/bottom-content.componen
 import { FooterComponent } from './footer/footer.component';
 import { MiddleContentComponent } from './middle-content/middle-content.component';
 import { AboutComponent } from './about/about.component';
+import { routing } from './app.routes';
+import { WaitlistComponent } from './waitlist/waitlist.component';
+import { PaymentComponent } from './payment/payment.component';
+import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +26,17 @@ import { AboutComponent } from './about/about.component';
     BottomContentComponent,
     FooterComponent,
     MiddleContentComponent,
-    AboutComponent
+    AboutComponent,
+    WaitlistComponent,
+    PaymentComponent,
+    HomeComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
