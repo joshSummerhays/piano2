@@ -21,7 +21,9 @@ export class TopContentComponent implements OnInit {
       } else if (media === 'photo2') {
         this.mediaURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Treble_a.svg/1280px-Treble_a.svg.png";
       } else if (media === 'photo3') {
-        this.mediaURL = "./assets/images/play-button.png";
+        this.mediaURL = "https://www.joytunes.com/images/misc/shutter/pianobeginner.jpg"; 
+      } else if (media === 'photo4') {
+        this.mediaURL = "https://i.ytimg.com/vi/9E6_cHecTZs/maxresdefault.jpg";
       } 
       // else if () {
       //   this.mediaURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Treble_a.svg/1280px-Treble_a.svg.png"
