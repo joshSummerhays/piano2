@@ -10,6 +10,10 @@
         flex-direction: column;
         .middle-button {
             background-color: $black;
+            &:hover {
+                background-color: $btn-hover;
+                transform: scale(1.1);
+            }
         }
     }
     .middle-seperator {
@@ -24,6 +28,10 @@
         flex-direction: column;
        .middle-button {
             background-color: $black;
+            &:hover {
+                background-color: $btn-hover;
+                transform: scale(1.1);
+            }
         }
     }
 }

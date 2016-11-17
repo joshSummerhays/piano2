@@ -1,5 +1,13 @@
 .big-button {
     background-color: $black;
+    &:hover {
+        background-color: $btn-hover;
+        transform: scale(1.1);
+    }
+}
+
+.sml-thumb:hover {
+    transform: scale(1.2);
 }
 
 .video-thumb {
