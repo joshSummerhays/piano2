@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class TopContentComponent implements OnInit {
 
     play: boolean = false;
-    mediaURL: string = "https://s-media-cache-ak0.pinimg.com/originals/30/9b/55/309b55739a7a2d20a9de4498ee1de059.jpg";
+    mediaURL: string = "../assets/images/dusk-piano.jpg";
 
     constructor() { }
 
@@ -17,13 +17,13 @@ export class TopContentComponent implements OnInit {
 
     chooseMedia (media) {
       if (media === 'photo') {
-        this.mediaURL = "https://s-media-cache-ak0.pinimg.com/originals/30/9b/55/309b55739a7a2d20a9de4498ee1de059.jpg";
+        this.mediaURL = "../assets/images/dusk-piano.jpg";
       } else if (media === 'photo2') {
-        this.mediaURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Treble_a.svg/1280px-Treble_a.svg.png";
+        this.mediaURL = "../assets/images/treble-note.png";
       } else if (media === 'photo3') {
-        this.mediaURL = "https://www.joytunes.com/images/misc/shutter/pianobeginner.jpg"; 
+        this.mediaURL = "../assets/images/piano-beginner.jpg"; 
       } else if (media === 'photo4') {
-        this.mediaURL = "https://i.ytimg.com/vi/9E6_cHecTZs/maxresdefault.jpg";
+        this.mediaURL = "../assets/images/kid-piano.jpg";
       } 
       // else if () {
       //   this.mediaURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Treble_a.svg/1280px-Treble_a.svg.png"
