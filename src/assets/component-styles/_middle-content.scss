@@ -11,8 +11,9 @@
         .middle-button {
             background-color: $black;
             &:hover {
-                background-color: $btn-hover;
-                transform: scale(1.1);
+                /*background-color: $btn-hover;
+                transform: scale(1.1);*/
+                opacity: 0.8;
             }
         }
     }
@@ -29,8 +30,9 @@
        .middle-button {
             background-color: $black;
             &:hover {
-                background-color: $btn-hover;
-                transform: scale(1.1);
+                /*background-color: $btn-hover;*/
+                /*transform: scale(1.1);*/
+                opacity: 0.8;
             }
         }
     }

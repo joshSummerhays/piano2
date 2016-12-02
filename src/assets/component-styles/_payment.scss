@@ -20,13 +20,12 @@
         margin-right: 10px;
     }
     .play-size {
-        width: 155px;
-        height: 60px;
+        zoom: 24%;
         &:hover {
             transform: scale(1.2);
         }
         @media screen and (max-width: 334px) {
-            margin-left: -10px;
+            margin-left: -39px;
         }
     }
 }
