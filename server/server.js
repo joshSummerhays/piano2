@@ -7,7 +7,7 @@ const _ = require('lodash');
 
 let { mongoose } = require('./db/mongoose');
 // let { Todo } = require('./models/todo');
-let { Student } = require('./models/student');
+// let { Student } = require('./models/student');
 
 let app = express();
 const port = process.env.PORT;
