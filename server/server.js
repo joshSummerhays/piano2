@@ -13,6 +13,7 @@ let app = express();
 const port = process.env.PORT;
 
 app.use(bodyParser.json());
+app.use(express.static(__dirname + '/../dist'));
 
 //post for student waitlist
 app.post();
