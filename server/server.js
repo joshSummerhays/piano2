@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const {ObjectID} = require('mongodb');
 const _ = require('lodash');
 
-let { mongoose } = require('./db/mongoose');
+// let { mongoose } = require('./db/mongoose');
 // let { Todo } = require('./models/todo');
 // let { Student } = require('./models/student');
 
@@ -16,13 +16,15 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../dist'));
 
 //post for student waitlist
-app.post();
+// app.post();
 
 //post for new announcement
-app.post();
+// app.post();
 
 //get all students on waitlist
-app.get();
+app.get('/waitlist', (req, res) => {
+    res.status(200).send('waitlist route working');
+});
 
 
 // app.post('/todos', (req, res) => {
