@@ -8,10 +8,7 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "./assets/images/note-favicon.ico",
-        "./assets/images/appStore.svg",
-        "./assets/images/square_cash.png",
-        "./assets/images/venmo-app.png"
+        "./assets/images"
       ],
       "index": "index.html",
       "main": "main.ts",
