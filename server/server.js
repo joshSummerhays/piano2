@@ -1,17 +1,21 @@
-require('./config/config');
+// require('./config/config');
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const {ObjectID} = require('mongodb');
-const _ = require('lodash');
+// const {ObjectID} = require('mongodb');
+// const _ = require('lodash');
 
 // let { mongoose } = require('./db/mongoose');
 // let { Todo } = require('./models/todo');
 // let { Student } = require('./models/student');
 
-let app = express();
-const port = process.env.PORT;
+const app = express();
 
+const http = require('http').createServer(app);
+// const port = process.env.PORT;
+const port = process.env.PORT || 3030;
+
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../dist'));
 
@@ -116,11 +120,14 @@ app.get('/waitlist', (req, res) => {
 //     });
 // })
 
-app.listen(port, () => {
+// app.listen(port, () => {
+//     console.log(`started on port ${port}`);
+// });
+http.listen(port, () => {
     console.log(`started on port ${port}`);
 });
 
-module.exports = {app};
+// module.exports = {app};
 
 
 
