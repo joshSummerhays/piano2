@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-let Student = mongoose.model('Student', {
+let StudentSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -18,9 +18,11 @@ let Student = mongoose.model('Student', {
         trim: true
     },
     experience: {
+        type: String,
         required: true
     },
     startDate: {
+        type: String,
         required: true
     },
     age: {
@@ -40,8 +42,8 @@ let Student = mongoose.model('Student', {
 //     console.log('failure', err);
 // });
 
-module.exports = {
-    Student
-}
+let Student = mongoose.model('Student', StudentSchema);
+
+module.exports = {Student};
 
 
